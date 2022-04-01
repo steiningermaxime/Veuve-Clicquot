@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veuve Clicquot</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/849a3dfcf7.js" crossorigin="anonymous"></script>
+        
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<section>
+    <div class="circle">
+
+    </div>
+    <!-- Logo et bouton Veuve clicqot  -->
+    <header>
+        <a href="#" class="logo"><img src="img/logo.png" alt="Bouton d'accueil Veuve Clicqot" width="200px" height="40px"> </a>
+    </header>  
+    <!-- Présentation et description du nouveau produit Nouvelle ère  -->
+    <div class="content">
+        <div class="textbox">
+            <h2>               
+                 Tout nouveau, notre champagne Brut Bio, faisant parti de la gamme<span>"Nouvelle Ère" </span>.
+            </h2> 
+            <p class="description">Par définition, le champagne est un vin français effervescent. Il a vu le jour au 17ème siècle dans la région Champagne dont il a hérité le nom. <br>
+            Cette viticulture biologique est certifié AB, Agriculture Biologique, elle respecte le rythme naturel de la vigne et n'utilise aucun pesticide afin de produire des cuvées de qualité dans le respect de la nature.
+
+            </p>
+            <a href="#sectionVideo">Nos productions</a>
+        </div>
+        <div class="imgbox">
+            <img src="img/Veuve1.png" alt="Nouveau Champagne Veuve Cliqcot Bio" class="veuvebio">
+
+        </div>
+    </div>
+
+    <!-- Produits de substitution avec du JS pour changer l'affichage  -->
+    <ul class="champagne">
+        <li> <img src="img/Veuve1.png"alt="Nouveau Champagne Veuve Cliqcot Bio Brut"         onclick="imgSlider('img/Veuve1.png'); changeCircleColor('#F9B037')" height="100px" width="100px"></li>
+        <li> <img src="img/veuve2.png"alt="Nouveau Champagne Veuve Cliqcot Bio Millésimé "   onclick="imgSlider('img/veuve2.png'); changeCircleColor('#98999b')" height="100px" width="100px"> </li>
+        <li> <img src="img/veuve3.png"alt="Nouveau Champagne Veuve Cliqcot Bio Crément"      onclick="imgSlider('img/veuve3.png'); changeCircleColor('#407232')" height="100px" width="100px"> </li>
+    </ul>
+
+    
+</section>
+
+<section class="sectionVideo" id="sectionVideo">
+
+  
+       <h3 class="titreVideo"> Veuve Clicquot - La maison en détail </h3> 
+        <p class="textVideo"> 
+Barbe-Nicole Clicquot, surnommée la «Grande Dame de Champagne», née Ponsardin fut une femme d'affaires et la première femme à diriger une maison de champagne. Née le 16 décembre 1777 à Reims. Elle avait 27 ans lors du décès de son mari, François Clicquot.<br>
+ Il lui laisse une maison de champagne créée 33 ans auparavant en 1772 et produisant 100 000 bouteilles annuellement.
+<br> Surnommée, «la Veuve Clicquot» ou «la Grande Dame de la Champagne», dotée d'une force de caractère peu commune, elle sut diriger son entreprise et à sa mort le 29 juillet 1866, la maison commercialisait 750 000 bouteilles à travers le monde.<br>
+ Elle eu l'intelligence d'acquérir des vignes parmi les meilleurs crus, à Bouzy, à Verzy et à Verzenay dans la Montagne de Reims, constituant ainsi l’exceptionnel patrimoine de la maison de 286 hectares. Elle conçut aussi la célèbre étiquette jaune qui, dans le monde entier, permet de reconnaître d’un coup d’œil une bouteille de Clicquot.
+
+La Grande Dame de Champagne </p>
+<iframe class="video" alt="Vidéo de Présentation de nos champagne Bio." width="760" height="515" src="https://www.youtube.com/embed/lbrP36e6GtI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>  </iframe>
+</section>
+
+
+<!-- Footer avec RS et copyright -->
+<footer class="footer">
+       
+   
+        <form action="recup_donnees.php" method="post">
+            <div class="login-form">
+                <h2 class="text-center">Inscription à notre newsletter</h2>       
+             
+                <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="Email" required="required" autocomplete="off">
+                </div>
+            
+                    <div class="form-group">
+                        <button type="submit" class="">Inscription</button>
+                    </div>   
+        </form>
+            </div>
+            <div class="copyright">Copyright &copy; 2022 Veuve Clicqot. All rights reserved.
+    </div>
+    
+   
+        
+
+
+    <a class="PrivateTerms" href=""> <i class="fab fa-youtube"></i></a>
+        <a class="PrivateTerms" href=""><i class="fab fa-facebook-f"></i></a>
+        <a class="PrivateTerms" href=""><i class="fab fa-instagram"></i></a>
+    </div>
+<div>
+            <a class="PrivateTerms"  href="">Privacy Policy</a>
+            <a class="PrivateTerms" href="">Terms of Use</a>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+<!-- Partie Javascript  -->
+<script type="text/javascript">
+
+/* Changer d'image en fonction du produits */
+    function imgSlider(anything){
+        document.querySelector('.veuvebio').src = anything;
+    }
+/* changer de couleur le background en fonction du produit */
+    function changeCircleColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+
+    }
+
+    
+</script>
+</body>
+</html>

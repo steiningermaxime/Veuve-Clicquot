@@ -1,0 +1,229 @@
+
+@font-face {
+    font-family:Bodoni;
+    src: url(BODONIFLF-BOLD.TTF);
+   
+ }
+ 
+@font-face {
+    font-family:Sacker;
+    src: url(SACKERSGOTHICSTD-LIGHT.OTF);
+   
+ }
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+h2{
+    font-family:Bodoni;
+}
+
+.description{
+    font-family:Sacker;
+
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+}
+header{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+
+}
+header.logo{
+    position: relative;
+    max-width: 80px;
+
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textbox{
+    position: relative;
+    max-width: 600px;
+
+}
+.content .textbox h2{
+    color: #333;
+    font-size: 2.2em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.content .textbox h2 span{
+    color: #F9B037;
+    font-size: 1em;
+    font-weight: 900;
+    
+
+}
+.content .textbox p{
+    color: #333;
+
+}
+.content .textbox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 80px;
+    background:#F9B037;
+    color: white;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-family:Bodoni;
+
+}
+.content .imgbox{
+    
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+/* Taille image champagne produits droite */
+.content .imgbox img{
+    max-width: 540px; 
+}
+@media screen and  (max-width: 787px){
+    .content .imgbox img{
+        max-width: 250px; }
+}
+@media screen and  (max-width: 585px){
+    .content .imgbox img{
+        max-width: 100px; }
+}
+    
+    
+
+
+.champagne{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.champagne li{
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;   
+    transition: 0.5s;
+}
+.champagne li :hover{
+    transform: translateY(-25px);
+}
+.champagne li img{
+    max-width: 100px;
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F9B037;
+    clip-path: circle(600px at right);
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: "Montserrat";
+    
+  }
+  .copyright{
+    color:#F9B037;
+  }
+  .PrivateTerms{
+    color:#F9B037;
+  }
+
+  .login-form {
+    width: 340px;
+    margin: 50px auto;
+}
+.login-form form {
+    margin-bottom: 15px;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+.login-form h2 {
+    margin: 0 0 15px;
+}
+.form-control, .btn {
+    min-height: 38px;
+    border-radius: 2px;
+}
+.btn {        
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+.form-group.inscription {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 80px;
+    background:#F9B037;
+    color: white;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+button{
+    
+   
+    padding: 8px 80px;
+    background:#F9B037;
+    color: white;
+    border-radius: 40px;
+    font-family:Sacker;
+    
+    
+}
+
+.sectionVideo {
+    clear: left; 
+    font-family: Sacker;
+    
+}
+
+
+@media screen and  (max-width: 1087px){
+    .video{
+        max-width: 90%; }
+}
+.text-center{
+    color: #F9B037;
+}
+
+.titreVideo{
+    font-family: Bodoni;
+}
